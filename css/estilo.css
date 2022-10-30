@@ -4,22 +4,16 @@
     box-sizing: border-box;
 }
 
-nav ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: blue;
-    margin-left: 20px;
-    font-weight: bold;
-}
 
-
-header {
-    text-align: center; 
+body {
     background-color: #A2FFE0;
 }
 
 
-body {
+/* HEADER */
+
+header {
+    text-align: center; 
     background-color: #A2FFE0;
 }
 
@@ -33,6 +27,17 @@ body {
 .menuImagen img{
     width: 250px;
     height: 100px;
+}
+
+
+/* NAV */
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: blue;
+    margin-left: 20px;
+    font-weight: bold;
 }
 
 li {
@@ -69,10 +74,16 @@ form {
     margin-left: 400px;
 }
 
+
+/* FOOTER */
+
 footer {
     text-align: center;
     color: #333;
-    /* background-image: url(../imagenes/fondo\ de\ pantalla.webp); */
+    /* background-image: url(../imagenes/imagen-fondo-footer1.jpg);
+    opacity: 80%;
+    height: 10%;
+    width: 100%; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -88,7 +99,7 @@ footer a {
 
 
 
-/* Variables para las Redes */
+/* Variables y animación para las Redes */
 
 
 :root {
