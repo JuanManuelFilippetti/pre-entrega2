@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: blue;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+
+header {
+    text-align: center; 
+    background-color: #A2FFE0;
+    /* margin-top: 10px;    */
+}
+
+
+
+body {
+    background-color: #A2FFE0;
+}
+
+.menuImagen {
+    display: flex;
+    justify-content: left;
+    align-items: top;
+    top: 10px;
+}
+
+.menuImagen img{
+    width: 250px;
+    height: 100px;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+    color: green;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img {
+    width: 600px;
+    height: 600px;
+} 
+
+form {
+    display: block;
+}
+
+.imagenPerrodrilo {
+    margin-left: 400px;
+}
+
+footer {
+    text-align: center;
+    color: #333;
+    /* background-image: url(../imagenes/fondo\ de\ pantalla.webp); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px #333 solid;
+    border-radius: 6px;
+}
+
+
+footer a {
+    margin-left: 10px;
+    text-align: center;
+}
+
+
+
+/* Variables para las Redes */
+
+
+:root {
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+}
+
+
+.redes {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.redes ul li a {
+    display: block;
+    padding: 0 10px;
+    background: #333;
+    color: #FFFFFF;
+    line-height: 40px;
+    font-size: 20px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    transition: .2s;
+    border-radius: 4px;
+}
+
+.redes ul:hover a {
+    filter: blur(2px);
+}
+
+.redes ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+    filter: none;
+}
+
+.redes ul li .facebook:hover {
+    background: var(--facebook);
+}
+
+.redes ul li .instagram:hover {
+    background: var(--instagram);
+}
+
+
+.footerCreada {
+    color: black;
+}
