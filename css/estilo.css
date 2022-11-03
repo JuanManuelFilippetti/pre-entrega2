@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
 
-body {
+main {
     background-color: #A2FFE0;
 }
 
@@ -19,7 +22,7 @@ header {
 
 .menuImagen {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: top;
     top: 10px;
 }
@@ -30,20 +33,66 @@ header {
 }
 
 
+
+
 /* NAV */
 
-nav ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: blue;
-    margin-left: 20px;
-    font-weight: bold;
+/* .contenedorNavbar {
+    
+    text-align: center;
 }
 
-li {
-    list-style-type: none;
-    display: inline-block;
+.navbar-nav {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    
 }
+
+.navbar-brand {
+    color: blue;
+} */
+
+.imgP {
+    width: 50px;
+} 
+
+
+
+
+/* nav {
+    background-color: #A2FFE0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky; 
+    top: 0;
+    grid-area: nav;
+    height: 10vh;
+
+} */
+
+/*nav ul li {
+    text-decoration: none;
+    /* text-transform: uppercase;
+    color: blue;
+    margin-left: 20px;
+    font-weight: bold; */
+
+    /* list-style-type: none;
+    display: inline-block;
+    margin: 2rem;
+}  */
+
+
+/* a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+
+}  */
+
 
 h1 {
     text-align: center;
@@ -61,29 +110,46 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-img {
+/* img {
     width: 600px;
     height: 600px;
-} 
+}  */
 
 form {
     display: block;
 }
 
 .imagenPerrodrilo {
-    margin-left: 400px;
+    width: 40vw;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
 }
+
+img {
+    width: 100%;
+}
+
+.imgGaleria {
+    width: 40vw;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: left;
+}
+
+
+
+
+
 
 
 /* FOOTER */
 
 footer {
+    padding-top: 2rem;
     text-align: center;
     color: #333;
-    /* background-image: url(../imagenes/imagen-fondo-footer1.jpg);
-    opacity: 80%;
-    height: 10%;
-    width: 100%; */
+    background-color: #A2FFE0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -157,3 +223,87 @@ footer a {
 .footerCreada {
     color: black;
 }
+
+
+/* VISTA MOVIL */
+
+@media (max-width:699px) {
+    .gridPadre {
+        grid-template-areas: 
+        "header"
+        "nav"
+        "avion"
+        "mesaSillas"
+        "tablita"
+        "footer"
+        ;
+        html {
+            font-size: 80%;
+        }
+        nav {
+            position: static;
+        }
+    }
+
+    html {
+        font-size: 80%; /*para que el tamaño de las fuentes sea mas grande*/
+    }
+
+    nav {
+        position: static; /*para que el nav se quede estatico*/
+    }
+
+    .encabezado div {
+        max-width: 90%; /*es el ancho maximo que va a tener*/
+    }
+
+    section {
+        text-align: center;
+    }
+
+    section img {
+        width: 300px;
+    }
+}
+
+
+/* TABLETA */
+
+@media (min-width:700px) and (max-width:1099px) {
+    .gridPadre {
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "avion avion"
+        "mesaSillas mesaSillas"
+        "tablita tablita"
+        "footer footer"
+        ;
+    }
+
+    section img {
+        width: 300px;
+    }
+}
+
+
+
+/* PC */
+
+@media (min-width:1100px) {
+    .gridPadre {
+        grid-template-areas: 
+        "header header header header"
+        "nav nav nav nav"
+        "avion avion avion avion"
+        "mesaSillas mesaSillas mesaSillas mesaSillas"
+        "tablita tablita tablita tablita"
+        "footer footer footer footer"
+        ;
+    }
+}
+
+
+
+
+
